@@ -3,8 +3,9 @@ $host = 'localhost';
 $db = 'php_todolist';
 $user = 'flashrex';
 $pass = 'flashrex';
+$charset = 'utf8mb4';
 
-$dsn = "pgsql:host=$host;dbname=$db";
+$dsn = "mysql:host=$host;dbname=$db;user=$user;password=$pass,charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // throws exceptions on errors
