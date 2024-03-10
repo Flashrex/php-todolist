@@ -5,7 +5,7 @@ $user = 'flashrex';
 $pass = 'flashrex';
 $charset = 'utf8mb4';
 
-$dsn = "mysql:host=$host;dbname=$db;user=$user;password=$pass,charset=$charset";
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, // throws exceptions on errors
