@@ -1,0 +1,104 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 1rem;
+    background-color: var(--color-background-soft);
+    width: 20vw;
+    padding: 10px;
+    border-radius: 15px;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Create a new box to represent the checkbox */
+input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--color-highlight);
+    border-radius: 100%;
+}
+
+/* Show a checkmark when the checkbox is checked */
+input[type="checkbox"]:checked+label:after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 8px;
+    height: 14px;
+    border: solid var(--color-highlight);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_round {
+    margin-right: 1rem;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    opacity: 0.9;
+}
+
+.button_round:hover {
+    opacity: 1;
+}
+
+.button_round > img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 100%;
+    }
+
+    li {
+        box-sizing: content-box;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
