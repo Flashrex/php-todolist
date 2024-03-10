@@ -16,7 +16,7 @@ Man hat die Möglichkeit Tasks zu erstellen, als beendet zu markieren und zu lö
 
 ## Tech
 
-- [PHP](https://www.php.net/)
+- [PHP](https://www.php.net/) - a popular general-purpose scripting language
 - [MySql](https://www.mysql.com/) - database management system
 
 ## Images
